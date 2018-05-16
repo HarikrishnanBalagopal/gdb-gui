@@ -1,0 +1,272 @@
+/*App styles*/
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    background-color: beige;
+}
+ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*TESTING BEGIN*/
+.test-text-area
+{
+    width: 297px;
+    height: 200px;
+}
+/*TESTING END*/
+
+/*Main view*/
+.main-view{
+    max-width: 800px;
+}
+.main-view-controls{
+    background-color: #006064;
+}
+.main-view-navigation-links>li{
+    display: inline;
+}
+
+/*Disassembly view*/
+.disassembly-view {
+    max-width: 800px;
+    background-color: #bbdefb;
+}
+.disassembly-view > ol {
+    height: 400px;
+    overflow: auto;
+}
+.disassembly-view-controls {
+    background-color: #cfd8dc;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    border-bottom: 1px solid black;
+}
+.disassembly-view-controls>span {
+    margin-right: 16px;
+}
+.disassembly-view-header {
+    border-bottom: 1px solid black;
+    background-color: #cfd8dc;
+    font-weight: 800;
+}
+.disassembly-view-header-break {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 40px;
+    border-right: 1px solid black;
+}
+.disassembly-view-header-address {
+    padding-right: 64px;
+    border-right: 1px solid black;
+}
+.disassembly-view-header-offset {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 80px;
+    border-right: 1px solid black;
+}
+.disassembly-view-instructions>li {
+    white-space: nowrap;
+}
+.disassembly-view-instructions>li.rip-instruction {
+    background-color: red;
+}
+.disassembly-view-instructions>li>span>input {
+    margin-top: 2px;
+}
+.disassembly-view-instructions-break {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 8px;
+    border-right: 1px solid black;
+}
+.disassembly-view-instructions-address {
+    padding-right: 8px;
+    border-right: 1px solid black;
+}
+.disassembly-view-instructions-offset {
+    display: inline-block;
+    width: 56px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-right: 1px solid black;
+}
+.disassembly-view-instructions-instruction {
+    padding-left: 16px;
+}
+
+/*Console view*/
+.console-view {
+    max-width: 800px;
+    background-color: #b2ff59;
+    padding: 16px;
+}
+.console-view > input {
+    width: 100%;
+    background-color: #dcedc8;
+    border: 1px solid black;
+}
+.console-view > textarea {
+    width: 100%;
+    height: 400px;
+    background-color: #dcedc8;
+    border: 1px solid black;
+}
+.console-view-controls {
+    background-color: #cfd8dc;
+}
+.console-view-controls > span {
+    margin-right: 16px;
+}
+
+/*File browser view*/
+.file-browser-view {
+    max-width: 800px;
+    background-color: #4caf50;
+    padding: 16px;
+}
+.file-browser-view-controls {
+    background-color: #cfd8dc;
+    padding-bottom: 2px;
+}
+.file-browser-view-controls-address {
+    width: 440px;
+}
+.file-browser-view-directory {
+    background-color: #e1f5fe;
+}
+.file-browser-view-controls-search {
+    width: 190px;
+}
+.file-browser-view-directory-list-header {
+    background-color: #cfd8dc;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 800;
+}
+.file-browser-view-directory-list-header-name {
+    display: inline-block;
+    width: 400px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.file-browser-view-directory-list-header-date {
+    display: inline-block;
+    width: 160px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.file-browser-view-directory-list-header-type {
+    display: inline-block;
+    width: 60px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.file-browser-view-directory-list-header-size {
+    display: inline-block;
+    width: 100px;
+    padding-left: 4px;
+}
+.file-browser-view-directory-list-header-name > .file-dir-icon {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.file-browser-view-directory-list {
+    height: 400px;
+    overflow: auto;
+}
+/*Functions view*/
+.functions-view {
+    max-width: 800px;
+    background-color: #BA68C8;
+    padding: 16px;
+}
+.functions-view-controls {
+    background-color: #cfd8dc;
+    border-bottom: 1px solid black;
+}
+.functions-view-header {
+    background-color: #cfd8dc;
+    border-bottom: 1px solid black;
+    font-weight: 800;
+}
+.functions-view-header-name {
+    display: inline-block;
+    width: 400px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.functions-view-header-start-address {
+    display: inline-block;
+    width: 160px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.functions-view-header-end-address {
+    display: inline-block;
+    width: 160px;
+    padding-left: 4px;
+}
+.functions-view-funclist {
+    background-color: #D1C4E9;
+    height: 400px;
+    overflow: auto;
+}
+.functions-view-funclist-name>i {
+    padding-left: 2px;
+    padding-right: 4px;
+    font-size: 8px;
+}
+.functions-view-funclist-name {
+    display: inline-block;
+    width: 400px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.functions-view-funclist-start-address {
+    display: inline-block;
+    width: 160px;
+    padding-left: 4px;
+    border-right: 1px solid black;
+}
+.functions-view-funclist-end-address {
+    display: inline-block;
+    width: 160px;
+    padding-left: 4px;
+}
+
+/*Register view*/
+.register-view {
+    display: grid;
+    padding: 16px;
+    grid-template-rows: 24px 1fr;
+    grid-template-areas:
+        "ctrl ctrl"
+        "reg1 reg1";
+    background-color: #9FA8DA;
+    width: 800px;
+}
+.register-view-controls{
+    grid-area: ctrl;
+    background-color: #cfd8dc;
+    border-bottom: 1px solid black;
+}
+.register-view-register-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: reg1;
+    height: 300px;
+    padding-top: 2px;
+    background-color: #DCE775;
+}
+.register-view-register-list-register>label{
+    display: inline-block;
+    width: 64px;
+}
