@@ -10,7 +10,7 @@
   "author": "Cooler",
   "license": "ISC",
   "dependencies": {
-    "ws": "^5.1.0"
+    "ws": "^7.4.6"
   },
   "optionalDependencies": {
     "bufferutil": "^3.0.3",
